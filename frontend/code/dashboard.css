@@ -1,0 +1,27 @@
+.dashboard{
+    background-color: white;
+}
+#title, #contact, #login, #register {
+    font-size: 11px;
+    color: rgb(87, 87, 87);
+    text-align: center;
+    padding-top: 0.9%;
+    padding-bottom: 0.9%;
+}
+
+#title{
+    font-weight: bold;
+}
+
+#logo{
+    text-align: left;
+    padding-top: 0.6%;
+    padding-bottom: 0.4%;
+    /*padding-left: 0.05%;*/
+
+}
+#title{
+
+    text-align: left;
+
+}

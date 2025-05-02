@@ -3,34 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AwakeCam</title>
+    <link rel="stylesheet" href ="pricing.css">
+    <link rel="stylesheet" href ="dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
-    <section class="dashboard">
-        <label id="logo">insert logo here</label>
-        <label id="title">Awake Cam</label>
-        <button type="button" id="contact" onclick="location.href='contact.html'">contact us at</label>
-        <button type="button" id="login" onclick="location.href='login_page.html'">Log in</button>
-        <button type="button" id="register" onclick="location.href='register.html'">Sign in</button>
+    <section class="dashboard bg-light position-sticky top-0 w-100" style="z-index: 1030;">
+        <div class="container">
+            <div class="row bs5-grid-row">
+                <div class="col-lg-1 col-md-3 col-sm-2 col-2" id="logo" onclick="location.href='intro.html'"><img src="raspberry-pi-logo.png" alt="Description of image" width="25" height="25"></div>
+                <div class="col-lg-8 offset=3  col-md-3 col-sm-4 col-4" id="title" onclick="location.href='intro.html'">Awake Cam™</div>
+                <div class="col-lg-1 col-md-2 col-sm-2 col-2" id="contact" onclick="location.href='contact.html'">contact</div>
+                <div class="col-lg-1 col-md-2 col-sm-2 col-2" id="login" onclick="location.href='login_page.html'">Log in</div>
+                <div class="col-lg-1 col-md-2 col-sm-2 col-2" id="register" onclick="location.href='register.html'">Sign in</div>
+            </div>
+        </div>
     </section>
-    <section class="main page">
-        <h1>Buy our hardware at: </h1>
-        <a href="https://www.tokopedia.com/official-brands/sony-wh-1000xm5-wh1000-xm5-wh1000xm5-noise-cancelling-headphones-black-stand-d79ab?extParam=ivf%3Dtrue%26keyword%3Dxm5%26search_id%3D20250501133933C503E4C2E1F0A22FFZ7T%26src%3Dsearch&t_id=1746106777591&t_st=1&t_pp=search_result&t_efo=search_pure_goods_card&t_ef=goods_search&t_sm=&t_spt=search_result" target="_blank">
-            <img src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/477beeba63614b59922620cc8a980748~.jpeg.webp?ect=4g" alt="product name" width="300">
-          </a>
 
-        <h1>Subscription Plan</h1>
-        <p>Choose the plan that suits you best!</p>
-
-        <h2>Basic Plan</h2>
-        <p>Price: Free</p>
-        <p>Features: No access to our monitoring</p>
-
-        <h2>Pro Plan</h2>
-        <p>Price: $20/month</p>
-        <p>Features: All basic features, priority support, additional storage.</p>
-
-        <button type="button" onclick="history.back()">Back</button><br><br>
+    <section class="hardware bg-dark text-white p-2">
+    <div class="container">
+        <div class="row bs5-grid-row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12" id="titletext">
+                <h1><b>Find our products at: </b></h1>
+            </div>   
+            <div class="col-lg-3 col-md-3 col-sm-3 col-6" id="product">
+                <a href="https://www.tokopedia.com/official-brands/sony-wh-1000xm5-wh1000-xm5-wh1000xm5-noise-cancelling-headphones-black-stand-d79ab?extParam=ivf%3Dtrue%26keyword%3Dxm5%26search_id%3D20250501133933C503E4C2E1F0A22FFZ7T%26src%3Dsearch&t_id=1746106777591&t_st=1&t_pp=search_result&t_efo=search_pure_goods_card&t_ef=goods_search&t_sm=&t_spt=search_result" target="_blank">
+                    <img class="img-fluid" src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/477beeba63614b59922620cc8a980748~.jpeg.webp?ect=4g" alt="product name" width="300">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-6" id="product">
+                <a href="https://shopee.co.id/SONY-WH-1000XM5-Wireless-Noise-Cancelling-Headphone-WH1000XM5-i.12843098.17175587504?sp_atk=1e1dffb7-2cad-4c7d-a631-b23daabe2303&xptdk=1e1dffb7-2cad-4c7d-a631-b23daabe2303" target="_blank">
+                    <img class="img-fluid" src="https://down-id.img.susercontent.com/file/id-11134207-7r98t-lqyl3tniwuz1e9@resize_w900_nl.webp" alt="product name" width="300">
+                </a>
+            </div>
+        </div>
+        <div class="row bs5-grid-row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12" id="titletext"></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-6" id="producttext">
+                <h4>Tokopedia</h4>
+            </div>  
+            <div class="col-lg-3 col-md-3 col-sm-3 col-6" id="producttext">
+                <h4>Shopee</h4>
+            </div>  
+        </div>
+    </div>
     </section>
+
+
+    <section class="subscription">
+        <br>
+        <h1><b>Subscription Plan</b></h1><br>
+        <h6>Choose the plan that suits you best!</h6><br><br>
+        <!-- Unless mobile device -->
+        <div class="container d-none d-sm-block">
+
+
+            <div class="row bs5-grid-row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1"></div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-10" id="table" style="border: 2px solid;">
+                    <table class="table text-center">
+                        <thead>
+                          <tr>
+                            <th><h3>Basic Plan</h3></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>Access to Data Processing and Statistics</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <h2>Free</h2>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2 col-1"></div>
+
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-10" id="table" style="border: 2px solid;">
+                    <table class="table text-center">
+                        <thead>
+                          <tr>
+                            <th><h3>Basic Plan</h3></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>24/7 Maintanance Service</td>
+                          </tr>
+                          <tr>
+                            <td>Access to Control Page</td>
+                          </tr>
+                          <tr>
+                            <td>Full Access to Data Processing and Statistics</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <h6><s>20$/month</s></h6>
+                                <h2>5$/months</h2>
+                                <h6>Billed Annually at 60$</h6>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+        <!--mobile device-->>
+        <div class="mobile_device d-block d-sm-none">
+            <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th><h3>Premium Plan<h3></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>24/7 Maintanance Service</td>
+                  </tr>
+                  <tr>
+                    <td>Access to Control Page</td>
+                  </tr>
+                  <tr>
+                    <td>Full Access to Data Processing and Statistics</td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <h6><s>20$/month</s></h6>
+                        <h2>5$/months</h2>
+                        <h6>Billed Annually at 60$</h6>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <br><br>
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th><h3>Basic Plan<h3></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Access to Data Processing and Statistics</td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <h2>Free</h2>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+    </section>
+
 </body>
 </html>

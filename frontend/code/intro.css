@@ -1,0 +1,42 @@
+/* Fullscreen carousel items with background images */
+.bg-slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Button overlay centered */
+.button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  font-size: 1.5rem;
+}
+
+/* Buttons: 20% of viewport width */
+#pricing,
+#aboutus {
+  width: 20vw;
+  min-width: 120px;
+  padding: 1rem;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Optional: Improve usability on XS screens */
+@media (max-width: 576px) {
+  #pricing,
+  #aboutus {
+    width: 40vw;
+  }
+}

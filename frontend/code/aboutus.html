@@ -4,28 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AwakeCam</title>
+    <link rel="stylesheet" href ="dashboard.css">
+    <link rel="stylesheet" href ="aboutus.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
-    <section class="dashboard">
-        <label id="logo">insert logo here</label>
-        <label id="title">Awake Cam</label>
-        <button type="button" id="contact" onclick="location.href='contact.html'">contact us at</label>
-        <button type="button" id="login" onclick="location.href='login_page.html'">Log in</button>
-        <button type="button" id="register" onclick="location.href='register.html'">Sign in</button>
+<!--dashboard-->
+    <section class="dashboard bg-light position-sticky top-0 w-100" style="z-index: 1030;">
+        <div class="container">
+            <div class="row bs5-grid-row">
+                <div class="col-lg-1 col-md-3 col-sm-2 col-2" id="logo" onclick="location.href='intro.html'"><img src="raspberry-pi-logo.png" alt="Description of image" width="25" height="25"></div>
+                <div class="col-lg-8 offset=3  col-md-3 col-sm-4 col-4" id="title" onclick="location.href='intro.html'">Awake Cam™</div>
+                
+                <div class="col-lg-1 col-md-2 col-sm-2 col-2" id="contact" onclick="location.href='contact.html'">contact</div>
+                <div class="col-lg-1 col-md-2 col-sm-2 col-2" id="login" onclick="location.href='login_page.html'">Log in</div>
+                <div class="col-lg-1 col-md-2 col-sm-2 col-2" id="register" onclick="location.href='register.html'">Sign in</div>
+            </div>
+        </div>
     </section>
-    <section class="main page">
-        <h1>About Us</h1>
-        <p>Welcome to our website! We are a team dedicated to providing high-quality content and services to our users.</p>
-        
-        <h2>Our Mission</h2>
-        <p>Our mission is to empower people through accessible and reliable information.</p>
-        
-        <h2>Our Team</h2>
-        <p>We are a diverse group of professionals with backgrounds in technology, design, and customer service.</p>
 
-        <h2>Contact</h2>
-        <p>If you have any questions or feedback, feel free to reach out at <a href="mailto: dennishubert69420@gmail.com">Here</a><br><br>
-        <button type="button" onclick="history.back()">back</button>
-    
+<!--main-->
+    <section class="main">
+        <div class="overview">
+            <h1>Overview</h1><br><br>
+            <h3 class="p-3">AwakeCam is a health-tech startup building intelligent,non-invasive sleep detection sensors designed to improve sleep monitoring at home and in healthcare settings. Our mission is to make sleep health measurable, understandable, and actionable — without the need for wearables or intrusive equipment.</h3>
+            <br>
+        </div>
+        <div class="problem">
+            <h1>The Problem</h1><br><br>
+            <h3>Poor sleep is linked to a wide range of health issues, yet traditional sleep monitoring is expensive, inconvenient, and often inaccessible. Current solutions either lack accuracy or require users to wear uncomfortable devices.</h3>
+            <br>
+        </div>
+        <div class="solution">
+            <h1>Our Solution</h1><br><br>
+            <h3>AwakeCam uses advanced sensor technology — including motion tracking, thermal imaging, and AI-powered analysis — to passively monitor sleep patterns, detect disturbances, and provide actionable insights in real-time. The system is contactless, easy to install, and designed for both consumers and care providers.</h3>
+            <br>
+        </div>
+        <div class="target-market">
+            <h1>Why Our Product?</h1><br><br>
+            <ul>
+                <li><h3>Consumers: Individuals looking to improve their sleep quality and overall health.</h3></li>
+                <li><h3>Healthcare Providers: Hospitals, clinics, and sleep centers seeking non-invasive monitoring solutions.</h3></li>
+                <li><h3>Insurance Companies: Organizations interested in reducing healthcare costs through preventive care.</h3></li>
+                <li><h3>Employers: Companies aiming to enhance employee wellness and productivity.</h3></li>
+            </ul>
+        </div>
+        <div class="vision">
+            <h1>Our Vision</h1><br><br>
+            <ul>
+                <li><h3>To revolutionize sleep health by making it accessible, understandable, and actionable for everyone.</h3></li>
+                <li><h3>To empower individuals and healthcare providers with the tools they need to improve sleep quality and overall health.</h3></li>
+                <li><h3>To lead the way in non-invasive sleep monitoring technology, setting new standards for accuracy and convenience.</h3></li>
+                <li><h3>To create a world where everyone can achieve better sleep and, consequently, better health.</h3></li>
+            </ul>
+            <br>
+        </div>
+    </section>
+<script async src="//www.instagram.com/embed.js"></script>
+</section>   
+<button type="button" onclick="history.back()">back</button>
 </body>
 </html>
