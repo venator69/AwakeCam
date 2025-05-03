@@ -12,22 +12,22 @@
     <section class="register-form font-weight-bold ">
       <h2 class="text-center mb-4">Register</h2>
       <form action="/register" method="POST">
-        <div class="mb-3">
+        <div class="mb-2">
           <label for="username" class="form-label">Username:</label>
           <input type="text" id="username" name="username" class="form-control" required>
         </div>
   
-        <div class="mb-3">
+        <div class="mb-2">
           <label for="first_name" class="form-label">First Name:</label>
           <input type="text" id="first_name" name="first_name" class="form-control" required>
         </div>
   
-        <div class="mb-3">
+        <div class="mb-2">
           <label for="last_name" class="form-label">Last Name:</label>
           <input type="text" id="last_name" name="last_name" class="form-control" required>
         </div>
   
-        <div class="mb-3">
+        <div class="mb-2">
           <label for="email" class="form-label">Email:</label>
           <input type="email" id="email" name="email" class="form-control" required>
         </div>
@@ -49,14 +49,17 @@
             <label class="form-check-label" for="showpass2">Show Confirm Password</label>
           </div>
         </div>
-  
-        <div class="d-grid gap-2 mb-3">
-          <button type="submit" class="btn btn-success">Register</button>
-          <button type="button" class="btn btn-primary" onclick="location.href='login_page.html'">Go to Login</button>
-          <button type="button" class="btn btn-secondary" onclick="history.back()">Back</button>
+        <div class="mb-2">
+          <a href="Login_page.html"> Already have an account?</a>
+          </div>
+  `
+        <div class="d-grid gap-2 mb-1">
+          <button type="submit" class="btn btn-primary">Register</button>
+          <button type="button" class="btn btn-outline-secondary" onclick="history.back()">Back</button>
         </div>
       </form>
     </section>
+    
   </body>
 <footer>
     <script>
