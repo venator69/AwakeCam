@@ -1,0 +1,7 @@
+names:
+- 0-Notsleeping
+- 1-Yawning
+- 2-Sleeping
+nc: 3
+train: C:/Users/denni/Desktop/awakecam_dataset/split/train
+val: C:/Users/denni/Desktop/awakecam_dataset/split/val
